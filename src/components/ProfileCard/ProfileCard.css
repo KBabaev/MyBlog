@@ -4,6 +4,8 @@
     flex-direction: column;
     position: relative;
     gap: 1rem;
+    overflow-x: clip;
+    background: var(--cardColor);
 }
 
 .ProfileImages {
@@ -79,4 +81,12 @@
 .vl {
     height: 50%;
     border-left: 2px solid var(--hrColor);
+}
+
+.ProfileCard > span {
+    font-weight: bold;
+    color: orange;
+    align-self: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
 }

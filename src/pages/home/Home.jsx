@@ -1,11 +1,12 @@
 import './Home.css';
 import {ProfileSide} from "../../components/ProfileSide/ProfileSide";
+import {PostSide} from "../../components/PostSide/PostSide";
 
 export const Home = () => {
     return (
         <div className="Home">
             <ProfileSide/>
-            <div className="postSide">Posts</div>
+            <PostSide/>
             <div className="rightSide">Rightside</div>
         </div>
     );

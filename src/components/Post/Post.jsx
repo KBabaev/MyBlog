@@ -4,10 +4,10 @@ import NotLike from '../../img/notlike.png'
 import Comment from '../../img/comment.png'
 import Share from '../../img/share.png'
 
-export const Post = ({data, id}) => {
+export const Post = ({data}) => {
 
     return (
-        <div className="Post" key={id}>
+        <div className="Post">
             <img src={data.img} alt='post image'/>
             <div className='postItem'>
                 <img src={data.liked ? Heart : NotLike} alt=''/>
@@ -15,7 +15,7 @@ export const Post = ({data, id}) => {
                 <img src={Share} alt=''/>
             </div>
 
-            <span>{data.likes} likes</span>
+            <span style={{color: 'var(--gray)', fontSize: '12px'}}>{data.likes} likes</span>
 
             <div className="detail">
                 <span><b>{data.name}</b></span>

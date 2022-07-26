@@ -17,6 +17,10 @@ export const RightSide = () => {
                 <img src={Comment} alt="Comment icon"/>
             </div>
             <TrendCard/>
+
+            <button className="button rs-button">
+                Share
+            </button>
         </div>
     )
 }

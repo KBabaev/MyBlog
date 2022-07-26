@@ -25,13 +25,23 @@ export const ProfileCard = () => {
                         <span>87</span>
                         <span>followers</span>
                     </div>
+
+                    {
+                        true && (
+                            <>
+                                <div className="vl"></div>
+                                <div className="follow">
+                                    <span>3</span>
+                                    <span>Posts</span>
+                                </div>
+                            </>
+                        )
+                    }
                 </div>
                 <hr/>
             </div>
 
-            <span>
-                My profile
-            </span>
+            {true ? '' : <span>My profile</span>}
         </div>
     );
 }

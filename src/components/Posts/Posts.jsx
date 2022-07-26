@@ -8,7 +8,7 @@ export const Posts = () => {
         <div className="Posts">
             {
                 POSTS_DATA.length && POSTS_DATA.map((post, id) => {
-                    return <Post data={post} id={id}/>
+                    return <Post data={post} key={id}/>
                 })
             }
         </div>

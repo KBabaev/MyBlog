@@ -1,15 +1,15 @@
 import './FollowersCard.css'
-import { FOLLOWERS } from '../../Data/FollowersData'
+import {FOLLOWERS} from '../../Data/FollowersData'
 
 export const FollowersCard = () => {
-  return (
+    return (
         <div className="FollowersCard">
             <h3>Who is following you</h3>
 
             {
                 FOLLOWERS.map((follower, id) => {
-                  return (
-                        <div className='follower'>
+                    return (
+                        <div className='follower' key={id}>
                             <div>
                                 <img src={follower.img} alt='avatar' className='followerImg'/>
                                 <div className="name">
@@ -20,9 +20,9 @@ export const FollowersCard = () => {
 
                             <button className='button fc-button'>follow</button>
                         </div>
-                  )
+                    )
                 })
             }
         </div>
-  )
+    )
 }
